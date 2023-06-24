@@ -7,9 +7,14 @@
     --background-dark: rgba(38, 74, 44, 0.9);
 }
 
-/* * {
+* {
     border: 1px solid red;
-} */
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
 
 body {
     font-family: 'Montserrat', cursive;
@@ -22,14 +27,12 @@ body {
 
 button {
     font-family: inherit;
-    font-size: inherit;
     color: inherit;
     padding: 8px 16px;
     background: none;
     cursor: pointer;
     border-style: none;
     outline: none;
-    margin-bottom: 1rem;
 }
 
 .header {
@@ -37,6 +40,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
     background-color: var(--background-dark);
     border-bottom: 1px solid var(--border-color);
 }
@@ -57,4 +61,16 @@ button {
 
 .button-nav:hover {
     transform: translateY(-10%);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-img {
+    height: 10%;
+    width: 10%;
+    border-radius: 90%;
 }
