@@ -1,0 +1,60 @@
+:root {
+    --font-color: #eee;
+    --font-color-dark: #aaa;
+    --border-color: #222;
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-light-hover: rgba(99, 99, 99, 0.4);
+    --background-dark: rgba(38, 74, 44, 0.9);
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    font-family: 'Montserrat', cursive;
+    font-size: 1.6rem;
+    color: var(--font-color);
+    background-image: url('img/paddys.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 8px 16px;
+    background: none;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.restaurant-name {
+    margin-bottom: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 10rem;
+}
+
+.button-nav {
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.3s;
+}
+
+.button-nav:hover {
+    transform: translateY(-10%);
+}
