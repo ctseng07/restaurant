@@ -4,12 +4,13 @@
     --border-color: #222;
     --background-light: rgba(0, 0, 0, 0.6);
     --background-light-hover: rgba(99, 99, 99, 0.4);
-    --background-dark: rgba(38, 74, 44, 0.9);
+    --header-color: rgba(23, 80, 33, 0.9);
+    --font-color: rgb(233, 233, 228);
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 html {
     font-size: 62.5%;
@@ -28,49 +29,60 @@ body {
 button {
     font-family: inherit;
     color: inherit;
-    padding: 8px 16px;
     background: none;
     cursor: pointer;
     border-style: none;
     outline: none;
+
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-size: 2rem;
+}
+
 
 .header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-color: var(--background-dark);
-    border-bottom: 1px solid var(--border-color);
+    justify-content: space-around;
+    background-color: var(--header-color);
+    opacity: 80%;
+    color: var(--font-color);
 }
 
-.restaurant-name {
-    margin-bottom: 1rem;
-    font-family: 'Tangerine', cursive;
-    font-size: 10rem;
-}
-
-.button-nav {
+.nav-btn {
     padding: 2rem;
-    font-size: 2rem;
-    background-color: transparent;
-    border-bottom: 2px solid transparent;
+    font-size: 3rem;
+    color: white;
     transition: transform 0.3s;
 }
 
-.button-nav:hover {
+.nav-btn:hover {
     transform: translateY(-10%);
+    border-bottom: 2px solid #222;
 }
 
 .home {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 30%;
+    background-color: var(--header-color);
 }
 
 #home-img {
-    height: 10%;
-    width: 10%;
-    border-radius: 90%;
+    width: 50%;
+    border-radius: 100%;
+    height: 40rem;
+    opacity: 80%;
+}
+
+.home p {
+    font-size: 2rem;
+    color: var(--font-color);
 }
