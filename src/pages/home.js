@@ -1,4 +1,5 @@
 import homeImage from "../img/paddyspub.png";
+import loadMenu from "./menu";
 
 function createHome() {
     // const mainWrapper = document.createElement("#main-wrapper");
@@ -11,12 +12,21 @@ function createHome() {
     homeImg.id = "home-img";
     homeImg.src = homeImage;
 
-    home.appendChild(createParagraph("Welcome to Paddy's Pub"));
-    home.appendChild(createParagraph("Home of the famous Milk Steak"));
+    home.appendChild(createParagraph("Welcome to"));
+    // home.appendChild(createParagraph("voted worst bar in america"));
     home.appendChild(homeImg);
-    home.appendChild(createParagraph("Order online or visit us!"));
+    // home.appendChild(createParagraph("Order online or visit us!"));
 
-    // mainWrapper.appendChild(home);
+    const orderBtn = document.createElement('button');
+    orderBtn.setAttribute('id', 'order-btn');
+    orderBtn.classList.add('orderBtn');
+    orderBtn.textContent = 'Order Now';
+    home.appendChild(orderBtn);
+
+    orderBtn.addEventListener('click', () => {
+        createMenu();
+        clearContent();
+    });
 
     return home;
 }

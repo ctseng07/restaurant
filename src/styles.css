@@ -1,11 +1,11 @@
 :root {
-    --font-color: #eee;
+    --font-color: white;
     --font-color-dark: #aaa;
     --border-color: #222;
-    --background-light: rgba(0, 0, 0, 0.6);
+    --body-color: rgba(0, 0, 0, 0.6);
     --background-light-hover: rgba(99, 99, 99, 0.4);
-    --header-color: rgba(23, 80, 33, 0.9);
-    --font-color: rgb(233, 233, 228);
+    --header-color: black;
+    --main-font-color: rgba(23, 80, 33, 0.9);
 }
 
 /* * {
@@ -40,8 +40,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
-    font-size: 2rem;
+    padding: 5rem;
 }
 
 
@@ -57,7 +56,7 @@ button {
 .nav-btn {
     padding: 2rem;
     font-size: 3rem;
-    color: white;
+    color: var(--font-color);
     transition: transform 0.3s;
 }
 
@@ -71,18 +70,31 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
     background-color: var(--header-color);
+    opacity: 80%;
 }
 
 #home-img {
     width: 50%;
     border-radius: 100%;
-    height: 40rem;
+    height: 25%;
     opacity: 80%;
 }
 
 .home p {
-    font-size: 2rem;
+    font-size: 5rem;
     color: var(--font-color);
+}
+
+.orderBtn {
+    background-color: var(--main-font-color);
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 20px;
+}
+
+.menu-list {
+    background-color: var(--header-color);
+    width: 40%;
 }

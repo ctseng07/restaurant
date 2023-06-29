@@ -1,4 +1,4 @@
-import paddysLogo from '../img/headerLogo.png';
+import paddysLogo from '../img/logo.png';
 import loadHome from './home'
 import createMenu from './menu';
 import createContact from './contact';
