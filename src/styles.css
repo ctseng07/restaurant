@@ -8,9 +8,11 @@
     --main-font-color: rgba(23, 80, 33, 0.9);
 }
 
-/* * {
+* {
     border: 1px solid red;
-} */
+    margin: 0;
+    padding: 0;
+}
 
 html {
     font-size: 62.5%;
@@ -89,12 +91,48 @@ button {
 
 .orderBtn {
     background-color: var(--main-font-color);
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 4rem;
     border-radius: 20px;
+    padding: 5px 20px;
 }
 
 .menu-list {
     background-color: var(--header-color);
     width: 40%;
+}
+
+#menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: var(--header-color);
+    opacity: 80%;
+}
+
+#menu-item h4 {
+    font-weight: bolder;
+    border-bottom: 1px dashed white;
+}
+
+#menu-item span {
+    float: right;
+}
+
+#menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: var(--header-color);
+    opacity: 80%;
+    gap: 20px;
+    padding: 5rem;
+}
+
+#menu-img {
+    border-radius: 100%;
+    width: 25rem;
+    height: 30rem;
 }
