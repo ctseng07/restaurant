@@ -9,7 +9,7 @@
 }
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -64,7 +64,7 @@ button {
 
 .nav-btn:hover {
     transform: translateY(-10%);
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid white;
 }
 
 .home {
@@ -109,14 +109,22 @@ button {
     font-size: 5rem;
     background-color: var(--header-color);
     opacity: 80%;
+    border-bottom: 2px solid white;
+
 }
 
 #menu-item h4 {
+    font-size: 4rem;
     font-weight: bolder;
     border-bottom: 1px dashed white;
 }
 
 #menu-item span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    font-size: 2rem;
     float: right;
 }
 
@@ -127,7 +135,7 @@ button {
     font-size: 2rem;
     background-color: var(--header-color);
     opacity: 80%;
-    gap: 20px;
+    gap: 30px;
     padding: 5rem;
 }
 
