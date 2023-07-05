@@ -1,9 +1,8 @@
 import homeImage from "../img/paddyspub.png";
-import loadMenu from "./menu";
+import createMenu from "./menu";
+import clearContent from "./website";
 
 function createHome() {
-    // const mainWrapper = document.createElement("#main-wrapper");
-    // mainWrapper.innerHTML = "";
 
     const home = document.createElement('div');
     home.classList.add("home");
@@ -13,9 +12,7 @@ function createHome() {
     homeImg.src = homeImage;
 
     home.appendChild(createParagraph("Welcome to"));
-    // home.appendChild(createParagraph("voted worst bar in america"));
     home.appendChild(homeImg);
-    // home.appendChild(createParagraph("Order online or visit us!"));
 
     const orderBtn = document.createElement('button');
     orderBtn.setAttribute('id', 'order-btn');
@@ -25,7 +22,6 @@ function createHome() {
 
     orderBtn.addEventListener('click', () => {
         createMenu();
-        clearContent();
     });
 
     return home;
@@ -41,6 +37,7 @@ function loadHome() {
     const main = document.getElementById("main");
     main.textContent = "";
     main.appendChild(createHome());
+
 }
 
 export default loadHome;
