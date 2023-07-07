@@ -6,8 +6,6 @@ import riotJuicePic from "../img/riotjuice.png"
 
 // module for creating the menu page
 function createMenu() {
-  const content = document.querySelector('#content');
-
   const menu = document.createElement('div');
   menu.classList.add('menu-container');
 
@@ -98,27 +96,6 @@ Milk steak boiled over hard, served with a side of our finest raw jelly beans
   menu.appendChild(menuItem2);
   menu.appendChild(menuItem3);
   menu.appendChild(menuItem4);
-
-  // const menuList = document.createElement('ul');
-  // const menuItem = document.createElement('img');
-  // menuItem.textContent = "Milk Steak";
-  // menuItem.height = "200";
-  // // menuItem.src = milkSteak;
-
-  // const menuItemImg = document.createElement('img');
-  // const menuItem2 = document.createElement('li');
-  // menuItem2.textContent = "2nd Choice";
-  // menuItemImg.src = milkSteak;
-
-  // const menuItem3 = document.createElement('li');
-  // menuItem3.textContent = "3rd Choice";
-  // // menuList.appendChild(menuItem1);
-  // menuList.appendChild(menuItem2);
-  // menu.appendChild(menuItemImg);
-  // menuList.appendChild(menuItem3);
-
-  // menu.appendChild(menuList);
-  // content.appendChild(menu);
 
   return menu;
 };

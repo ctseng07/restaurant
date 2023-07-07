@@ -1,7 +1,8 @@
 import paddysLogo from '../img/logo.png';
 import loadHome from './home'
-import createMenu from './menu';
-import createContact from './contact';
+import loadMenu from './menu';
+import loadContact from './contact';
+
 
 function createHeader() {
     const header = document.createElement("header");
@@ -28,7 +29,6 @@ function createNav() {
 
     homeBtn.addEventListener('click', () => {
         loadHome();
-        clearContent();
     });
 
     const menuBtn = document.createElement('button');
@@ -38,8 +38,7 @@ function createNav() {
     navBar.appendChild(menuBtn);
 
     menuBtn.addEventListener('click', () => {
-        createMenu();
-        clearContent();
+        loadMenu();
     });
 
     const contactBtn = document.createElement('button');
@@ -49,26 +48,17 @@ function createNav() {
     navBar.appendChild(contactBtn);
 
     contactBtn.addEventListener('click', () => {
-        createContact();
-        clearContent();
+        loadContact();
     });
 
     return navBar;
 }
 
-function clearContent() {
-    const content = document.querySelector("#content");
-    const pageContent = document.querySelector(".page-content");
-    if (pageContent) {
-        content.removeChild(pageContent);
-    };
-
-};
-
 function createMain() {
     const main = document.createElement("main");
     main.classList.add("main");
     main.setAttribute("id", "main");
+
     return main;
 }
 
@@ -80,16 +70,7 @@ function loadWebsite() {
     content.appendChild(createMain());
 
     loadHome();
-
 }
 
-// function loadWrapper() {
-//     //clear current content
-
-//     const mainWrapper = document.createElement("div");
-//     mainWrapper.id = "main-wrapper";
-
-//     return mainWrapper;
-// }
 
 export default loadWebsite;

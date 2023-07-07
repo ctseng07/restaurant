@@ -1,6 +1,5 @@
 import homeImage from "../img/paddyspub.png";
 import createMenu from "./menu";
-import clearContent from "./website";
 
 function createHome() {
 
@@ -30,6 +29,7 @@ function createHome() {
 function createParagraph(text) {
     const paragraph = document.createElement("p");
     paragraph.textContent = text;
+
     return paragraph;
 }
 
@@ -37,7 +37,6 @@ function loadHome() {
     const main = document.getElementById("main");
     main.textContent = "";
     main.appendChild(createHome());
-
 }
 
 export default loadHome;

@@ -42,6 +42,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 5rem;
 }
 
@@ -143,4 +144,49 @@ button {
     border-radius: 100%;
     width: 25rem;
     height: 30rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-color);
+    font-size: 2rem;
+    opacity: 80%;
+}
+
+.contact-page {
+    background-color: var(--header-color);
+    background-image: url('img/theGang.png');
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 70vh;
+    width: 50vw;
+}
+
+.contact-page p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+    font-size: 2rem;
+    background-color: var(--header-color);
+    opacity: 80%;
+}
+
+.contact-page span {
+    margin-right: 15px;
+}
+
+#contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    margin-bottom: 7rem;
+}
+
+#contact-img {
+    height: 40vh;
+    width: 25vw;
 }
